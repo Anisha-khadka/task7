@@ -383,7 +383,21 @@ padding-top: 50px;
   margin-top: 10px;
  
 }
-
+.polygon{
+  position: absolute;
+  width: 240px;
+  font-weight: bold;
+  font-size: 17px;
+  color: #143169;
+  text-align: center;
+  padding: 10px;
+height: 4vh;
+background-color: #F5F8FD;
+clip-path: polygon(0% 100%, 100% 100%, 85% 0%, 15% 0%);
+transform: translate(50%,50%) rotate(-90deg);
+right: 886px;
+margin-top: -160px;
+}
 
 /* footer */
 
@@ -411,4 +425,14 @@ padding-top: 50px;
 .footerdown{
   color: white;
   padding-top: 100px;
+}
+
+
+
+@media only screen and (max-width: 1000px) {
+  .polygon{
+  
+  right: 117px;
+  margin-top: -130px;
+  }
 }
