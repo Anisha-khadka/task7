@@ -9,6 +9,7 @@
     ></script>
 
     <link rel="stylesheet" href="style.css" />
+   
     <title>Document</title>
   </head>
   <body>
@@ -275,18 +276,18 @@
         <div class="content6right">
   <div class="form">
     <div>
-        <input type="text" placeholder="First name"/>
-        <input type="text" placeholder="Last name"/>
+        <input type="text" id="firstname" placeholder="First name"/>
+        <input type="text" id="lastname" placeholder="Last name"/>
 
     </div>
     <div>
-        <input type="email" placeholder="Email address"/>
-        <input type="number" placeholder="Phone no."/>
+        <input type="email" id="emailaddress" placeholder="Email address"/>
+        <input type="number" id="number" placeholder="Phone no."/>
 
     </div>
     
-    <textarea id="inputText" name="inputText" placeholder="Message..." rows="4" cols="47" style="resize: none;"></textarea><br/>
-  <button>Send Message</button>
+    <textarea id="inputText"  name="inputText" placeholder="Message..." rows="4" cols="47" style="resize: none;"></textarea><br/>
+  <button onclick="storemsg()">Send Message</button>
         </div>
         <div class="polygon">
             <p>Schedule an Appointment</p>
@@ -347,5 +348,9 @@
 
 
     </div>
+    <script src="./script.js">
+
+
+    </script>
   </body>
 </html>
