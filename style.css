@@ -1,6 +1,7 @@
 * {
   margin: 0px;
   padding: 0px;
+  
 }
 /* header */
 .header {
@@ -11,6 +12,7 @@
   display: flex;
   justify-content: space-around;
   color: white;
+  overflow: hidden;
 }
 .headerleft {
   display: flex;
@@ -22,7 +24,7 @@
 }
 .headerright {
   border: 1px solid #f69400;
-  height: 6vh;
+ height: 6vh;
   width: 300px;
   background-color: #f69400;
   display: flex;
@@ -69,6 +71,7 @@
   height: 500px;
   display: flex;
 }
+
 .slides input {
   display: none;
   outline: none;
@@ -145,11 +148,13 @@ input[type="radio"]:focus-visible {
 .slide button {
   border: 1px solid #f69400;
   background-color: #f69400;
-  padding: 10px;
-  border-radius: 15px;
-  margin-top: 10px;
+  padding: 13px 25px;
+  border-radius: 20px;
+  margin-top: -500px;
+  margin-left: -24px;
   color: white;
   font-weight: 600;
+  font-size: 16px;
 }
 
 /* content */
@@ -167,6 +172,7 @@ input[type="radio"]:focus-visible {
 }
 .content1 img {
   width: 140px;
+
   align-content: center;
   border: 4px solid rgb(247, 241, 241);
   border-radius: 50%;
@@ -177,37 +183,40 @@ input[type="radio"]:focus-visible {
 
 .content2 {
   display: flex;
-  padding: 10px 260px 0px 260px;
+  padding: 10px 300px 0px 300px;
+ 
   justify-content: space-between;
 }
 .content2left img {
-  width: 400px;
+  width: 380px;
+  height: 55vh;
 }
 .content2right {
-  margin-left: 100px;
+  margin-left: 120px;
+  font-size: 17px;
 }
 .content2right div {
-  padding-top: 15px;
+  padding-top: 3px;
 }
 .content2right p {
   padding-top: 5px;
 }
 .content2right button {
-  padding: 7px 16px;
-  background-color: #f69400;
+  padding: 10px 16px;
+  background-color: #F59E3E;
   color: white;
   margin-top: 20px;
   border: none;
   border-radius: 15px;
 }
 .content2left div {
-  background-color: #f69400;
+  background-color: #F59E3E;;
   color: white;
-  width: 210px;
-  padding: 60px 30px;
+  width: 220px;
+  padding: 50px 30px;
   position: absolute;
-  margin-top: -110px;
-  margin-left: 190px;
+  margin-top: -150px;
+  margin-left: 140px;
 }
 /* content3 */
 .content3 {
@@ -220,13 +229,16 @@ input[type="radio"]:focus-visible {
   text-align: center;
 }
 .content3down {
+  flex-wrap: wrap;
   display: flex;
   justify-content: center;
   padding-top: 30px;
 }
 .content3down1 {
   margin: 10px;
-
+  background-color: white;
+  box-shadow: 6px 6px 6px rgb(241, 238, 238);
+  border-radius: 15px;
   width: 240px;
 }
 
@@ -251,7 +263,7 @@ input[type="radio"]:focus-visible {
   background-color: #f69400;
   border: none;
   color: #f5f7fa;
-  margin-left: 20px;
+  margin: 20px;
 }
 
 /* content4 */
@@ -264,27 +276,57 @@ input[type="radio"]:focus-visible {
   margin: 40px 350px;
 }
 
-.contenta h1{
+.contenta{
   background-color: #f99806;
   color: white;
 
   font-weight: bold;
-  font-size: 20px;
-  width: 100px;
-  padding: 30px 5px 50px 5px;
+  font-size: 30px;
+  width: 120px;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 50%;
-  margin-bottom: 10px;
+  
 }
 .content411 .a{
-    border: 3px solid rgb(204, 201, 201);
-    padding:12px 10px 4px 10px;
-
+    border: 4px solid rgb(222, 215, 215);
+    width: 140px;
+    height: 140px;
+    display: flex;
+    align-items: center;
+   justify-content: center;
    border-radius: 50%;
+   margin-bottom: 20px;
+
+   
 }
+
+.solid{
+  color:  rgb(222, 215, 215);
+  position: absolute;
+  transform: rotateX('180');
+  margin-top: 70px;
+  margin-left: 147.9px;
+   height: 1px;
+  width: 186.5px;
+}
+.solid2{
+  color:  rgb(222, 215, 215);
+  position: absolute;
+  transform: rotateX('180');
+  margin-top: 70px;
+  margin-left: 483.7px;
+   height: 1px;
+  width: 186.5px;
+}
+
 
 
 /* content 5 */
 .content5{
+  
     display: flex;
   padding: 40px 260px 0px 260px;
   justify-content: space-between;
@@ -384,18 +426,21 @@ padding-top: 50px;
  
 }
 .polygon{
-  position: absolute;
+  position: relative;
   width: 240px;
   font-weight: bold;
   font-size: 17px;
   color: #143169;
   text-align: center;
   padding: 10px;
+  display: flex;
+  justify-content: center;
+ 
 height: 4vh;
 background-color: #F5F8FD;
 clip-path: polygon(0% 100%, 100% 100%, 85% 0%, 15% 0%);
 transform: translate(50%,50%) rotate(-90deg);
-right: 886px;
+right: 320px;
 margin-top: -160px;
 }
 
@@ -405,7 +450,7 @@ margin-top: -160px;
   height: 40vh;
   background-color: #3F5D97;
   margin-top:-10px;
-  padding: 60px 140px 0px 140px;
+  padding: 60px 260px 0px 260px;
 }
 .footerup{
   display: flex;
@@ -414,25 +459,67 @@ margin-top: -160px;
 }
 .footerup h1{
   padding-bottom: 10px;
+  font-size: 25px;
 }
 .footerup ul{
   list-style: none;
 }
 .footerup ul li{
-  padding-bottom: 10px;
-  padding-left: 15px;
+  padding: 10px 0px 5px 0px;
+  
+  color: rgb(187, 185, 185);
+}
+.footerup ul li i{
+  color: #3F5D97;
+  background-color: white;
+  margin-right: 19px;
+ width: 30px;
+ height: 30px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+  border-radius: 50%;
+
 }
 .footerdown{
-  color: white;
+  color: rgb(187, 185, 185);
   padding-top: 100px;
 }
 
 
 
 @media only screen and (max-width: 1000px) {
-  .polygon{
-  
-  right: 117px;
-  margin-top: -130px;
+
+  .content2{
+    padding: 0px;
   }
+  .content3{
+    height: 150vh;
+  }
+  .content41 {
+    margin:20px 0px 40px 0px;
+  }
+
+  .solid{
+    display: none;
+  }
+  .solid2{
+    display: none;
+  }
+
+  .content5{
+  flex-wrap: wrap-reverse;
+  padding:10px;
+ 
+}
+
+ 
+  
+
+  .footer{
+  
+
+    padding: 60px 10px 0px 10px;
+  }
+ 
 }
